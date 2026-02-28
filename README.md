@@ -116,6 +116,9 @@ Right click index.html → Open with browser
 ![](Screenshot%202026-02-28%20085034.png)
 ![](Screenshot%202026-02-28%20085123.png)
 #### Diagrams
+## 🎥 Demo Video
+
+[![Watch Demo](demo.png)](20260228091729.mp4)
 
 ## 🏗️ Architecture Diagram
 
