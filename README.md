@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [BunkBuddy] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [Simplex]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Thasnim] - [TKMCE]
+- Member 2: [Akhila] - [TKMCE]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://bunk-buddy.vercel.app/]
 
 ### Project Description
-[2-3 lines about what your project does]
+[BunkBuddy is a smart attendance planning web application designed to help students monitor and manage their attendance efficiently. The system allows users to select their branch, semester, and subject to calculate attendance status and determine whether they can safely bunk upcoming classes while maintaining the required attendance percentage.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Students face difficulty tracking attendance and predicting safe bunks. Manual calculations are inaccurate and inefficient. Hence, a smart system is required to compute attendance, forecast bunk limits, and help students maintain required attendance levels.]
 
 ### The Solution
-[How are you solving it?]
+[The proposed solution is a lightweight web-based attendance tracker that automatically calculates attendance percentage and predicts safe bunks using timetable data. It provides real-time insights through an easy-to-use interface, helping students maintain required attendance efficiently.]
 
 ---
 
@@ -31,25 +31,43 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- **Languages used:**  
+  HTML, CSS, JavaScript, JSON
+
+- **Frameworks used:**  
+  None (Vanilla JavaScript based lightweight web application)
+
+- **Libraries used:**  
+  None (pure client-side logic implementation)
+
+- **Tools used:**  
+  VS Code, Git, GitHub, Browser (Chrome/Edge), Mermaid (for architecture diagram)
 
 ---
+
+**For Hardware:**
+
+- **Main components:**  
+  Laptop/Desktop, Smartphone (optional for testing), Internet connection
+
+- **Specifications:**  
+  - Minimum 4GB RAM  
+  - Modern web browser supporting JavaScript  
+  - Basic storage for project files
+
+- **Tools required:**  
+  Keyboard, Mouse/Touchpad, Web browser, Code editor
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+
+- **Feature 1:** Automatic subject-wise attendance percentage calculation
+- **Feature 2:** Safe bunk prediction based on minimum attendance requirement
+- **Feature 3:** Real-time updates when attendance data changes
+- **Feature 4:** Lightweight browser-based interface with no backend required
+- **Feature 5:** Timetable-based attendance tracking using JSON data
 
 ---
 
@@ -59,14 +77,21 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+# Clone repository
+git clone https://github.com/your-username/BunkBuddy-.git
+
+# Navigate into project folder
+cd BunkBuddy-
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
-```
+# Open project in browser
+open index.html
 
+# OR (recommended)
+Right click index.html → Open with browser
+```
 ### For Hardware:
 
 #### Components Required
@@ -83,28 +108,33 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+## 📸 Screenshots
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+![](Screenshot%202026-02-28%20084852.png)
+![](Screenshot%202026-02-28%20084917.png)
+![](Screenshot%202026-02-28%20084956.png)
+![](Screenshot%202026-02-28%20085034.png)
+![](Screenshot%202026-02-28%20085123.png)
 #### Diagrams
 
-**System Architecture:**
+## 🏗️ Architecture Diagram
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+```mermaid
+flowchart LR
+A[User] --> B[Browser UI]
+B --> C[HTML Structure]
+B --> D[CSS Styling]
+B --> E[JavaScript Logic]
+E --> F[timetable.json Data]
+E --> G[Attendance Calculator]
+G --> H[Bunk Prediction Engine]
+H --> I[Result Display]
+```
 
-**Application Workflow:**
+## 🔄 Application Workflow
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
-
----
+![Workflow](docs/workflow.png)  
+*This diagram illustrates the complete workflow of the BunkBuddy system — starting from user input, processing attendance data through the JavaScript logic, calculating attendance percentage, predicting safe bunks, and finally displaying the results to the user interface.*
 
 ### For Hardware:
 
