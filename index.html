@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BunkBuddy | Plan Smart! Bunk Smarter!</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#7F7FD5,#86A8E7,#91EAE4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* floating blobs */
+.blob{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.6;
+    animation:float 8s infinite alternate;
+}
+.b1{background:#ff6ec7;top:10%;left:5%;}
+.b2{background:#00dbde;bottom:10%;right:10%;}
+@keyframes float{
+    from{transform:translateY(-20px)}
+    to{transform:translateY(20px)}
+}
+
+/* main container */
+.container{
+    width:900px;
+    display:flex;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.2);
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.2);
+}
+
+/* sidebar */
+.sidebar{
+    width:35%;
+    background:rgba(255,255,255,.15);
+    padding:30px;
+    color:white;
+}
+.sidebar h1{font-size:28px;margin-bottom:10px}
+.sidebar p{opacity:.8;margin-bottom:25px}
+.steps div{
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:10px;
+    background:rgba(255,255,255,.2);
+}
+
+/* form */
+.form{
+    width:65%;
+    padding:35px;
+}
+.form h2{
+    margin-bottom:25px;
+    font-size:24px;
+}
+label{font-size:14px;margin-top:12px;display:block}
+select,input{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    background:#f1f1f1;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(90deg,#ff6ec7,#7F7FD5);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{transform:scale(1.05)}
+
+.result{
+    margin-top:20px;
+    padding:15px;
+    border-radius:14px;
+    background:#fff;
+    text-align:center;
+    font-weight:500;
+}
+</style>
+</head>
+
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+
+<div class="container">
+
+<!-- sidebar -->
+<div class="sidebar">
+    <h1>🎓 BunkBuddy</h1>
+    <p>Plan Smart • Bunk Smarter 😎</p>
+
+    <div class="steps">
+        <div>🏫 Choose Branch</div>
+        <div>📚 Choose Semester</div>
+        <div>📖 Select Subject</div>
+        <div>📊 Enter Attendance</div>
+    </div>
+
+    <p>✨ “Attendance low? Strategy high.”</p>
+</div>
+
+<!-- form -->
+<div class="form">
+    <h2>📋 Attendance Planner</h2>
+
+    <label>🏫 Branch</label>
+    <select id="branch" onchange="loadSemesters()">
+        <option value="">-- Select Branch --</option>
+    </select>
+
+    <label>📚 Semester</label>
+    <select id="semester" onchange="loadSubjects()">
+        <option value="">-- Select Semester --</option>
+    </select>
+
+    <label>📖 Subject</label>
+    <select id="subject">
+        <option value="">-- Select Subject --</option>
+    </select>
+
+    <label>📊 Current Attendance %</label>
+    <input type="number" id="attendance" placeholder="Eg: 82">
+
+    <button onclick="calculateAttendance()">Check My Fate 😎</button>
+
+    <div id="result" class="result"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

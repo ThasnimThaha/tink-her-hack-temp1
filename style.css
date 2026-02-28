@@ -1,0 +1,148 @@
+/* ===== FONT & RESET ===== */
+body{
+    margin:0;
+    font-family:'Comic Neue',cursive;
+    background:linear-gradient(135deg,#7F7FD5,#86A8E7,#91EAE4);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ===== FLOATING GRADIENT BLOBS ===== */
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.6;
+    animation:float 8s infinite alternate ease-in-out;
+}
+.c1{width:260px;height:260px;background:#ff6ec7;top:10%;left:10%;}
+.c2{width:350px;height:350px;background:#00dbde;top:50%;left:60%;}
+.c3{width:200px;height:200px;background:#fddb92;top:75%;left:30%;}
+
+@keyframes float{
+    from{transform:translateY(-20px)}
+    to{transform:translateY(20px)}
+}
+
+/* ===== HEADER ===== */
+.header{
+    text-align:center;
+    padding:40px 10px;
+    color:white;
+    animation:bounce 2s infinite alternate;
+}
+.header h1{
+    font-size:3.2em;
+    margin:0;
+    text-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.tagline{font-size:1.2em;opacity:.9}
+
+@keyframes bounce{
+    from{transform:translateY(0)}
+    to{transform:translateY(-6px)}
+}
+
+/* ===== GLASS CARD ===== */
+.card{
+    max-width:420px;
+    margin:30px auto;
+    padding:28px;
+    border-radius:22px;
+    backdrop-filter:blur(25px);
+    background:rgba(255,255,255,.2);
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    transition:.4s;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+.card h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+/* ===== FORM ===== */
+label{
+    font-weight:bold;
+    color:white;
+    margin-top:15px;
+    display:block;
+}
+select,input{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border-radius:12px;
+    border:none;
+    outline:none;
+    background:rgba(255,255,255,.85);
+    transition:.3s;
+}
+select:focus,input:focus{
+    transform:scale(1.03);
+    box-shadow:0 0 10px rgba(255,255,255,.6);
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:linear-gradient(90deg,#ff6ec7,#7F7FD5,#00dbde);
+    background-size:300%;
+    color:white;
+    font-size:1.2em;
+    border-radius:14px;
+    cursor:pointer;
+    transition:.4s;
+}
+.btn:hover{
+    background-position:right;
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* ===== RESULT GLOW BOX ===== */
+.result{
+    margin-top:20px;
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    padding:15px;
+    border-radius:14px;
+    background:rgba(255,255,255,.9);
+    box-shadow:0 0 15px rgba(255,255,255,.8);
+    animation:pulse 2s infinite;
+}
+@keyframes pulse{
+    0%{box-shadow:0 0 10px rgba(255,255,255,.5)}
+    50%{box-shadow:0 0 20px rgba(255,255,255,1)}
+    100%{box-shadow:0 0 10px rgba(255,255,255,.5)}
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:18px 0;
+    color:white;
+    font-size:.95em;
+    backdrop-filter:blur(10px);
+}
+.fun-text{
+    color:#ff6ec7;
+    font-weight:bold;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:500px){
+    .header h1{font-size:2.5em}
+    .card{margin:20px}
+}

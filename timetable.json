@@ -1,0 +1,130 @@
+{
+  "CS": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Basic Electrical": 3 },
+    "S2": { "Maths 2": 4, "Chemistry": 3, "Programming in C": 4 },
+    "S3": { "Data Structures": 4, "Digital Logic": 3, "Discrete Maths": 3 },
+    "S4": { "Signals and Systems": 4, "EMT": 3, "DC Machines": 3 },
+    "S5": { "Operating Systems": 4, "DBMS": 4, "Microprocessors": 3 },
+    "S6": { "Computer Networks": 4, "Compiler Design": 3, "AI": 3 },
+    "S7": { "Machine Learning": 4, "Cloud Computing": 3, "Cyber Security": 3 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "CS&AI": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Basic Electrical": 3 },
+    "S2": { "Maths 2": 4, "Programming in C": 4, "Chemistry": 3 },
+    "S3": { "Data Structures": 4, "Discrete Maths": 3, "Digital Logic": 3 },
+    "S4": { "Probability": 4, "Signals": 3, "Linear Algebra": 3 },
+    "S5": { "Machine Learning": 4, "DBMS": 4, "Operating Systems": 3 },
+    "S6": { "Deep Learning": 4, "Computer Vision": 3, "NLP": 3 },
+    "S7": { "AI Ethics": 3, "Big Data": 4, "Cloud AI": 3 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "ER": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Basic Electronics": 3 },
+    "S2": { "Maths 2": 4, "Circuit Theory": 4, "Chemistry": 3 },
+    "S3": { "Electronic Devices": 4, "Digital Electronics": 3 },
+    "S4": { "Signals": 4, "Analog Circuits": 3 },
+    "S5": { "Microcontrollers": 4, "Communication Systems": 3 },
+    "S6": { "Embedded Systems": 4, "VLSI": 3 },
+    "S7": { "Robotics": 3, "IoT": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "EEE": {
+    "S1": {
+      "ENGLISH": 3, "IDEA LAB": 2, "DT": 3, "BEE": 4,
+      "BME": 3, "PHYSICS": 4, "MATHS": 4, "FEC": 2
+    },
+    "S2": {
+      "PSP": 4, "MATHS": 4, "CHEMISTRY": 3,
+      "GRAPHICS": 3, "UHV": 2, "SPORTS AND WELLNESS": 2
+    },
+    "S3": {
+      "LS": 4, "FPS": 3, "CT": 4, "DELD": 3,
+      "MATHS": 4, "MECHANICS": 3, "MI": 3
+    },
+
+    "S4": {
+      "calendar": {
+        "startDate": "2025-12-01",
+        "endDate": "2026-03-27",
+        "holidays": [
+          "2025-12-06","2025-12-07","2025-12-13","2025-12-14",
+          "2025-12-20","2025-12-21","2025-12-22","2025-12-23",
+          "2025-12-24","2025-12-25","2025-12-26","2025-12-27",
+          "2025-12-28",
+          "2026-01-02","2026-01-03","2026-01-04","2026-01-10",
+          "2026-01-11","2026-01-17","2026-01-18","2026-01-22",
+          "2026-01-23","2026-01-24","2026-01-25","2026-01-26",
+          "2026-01-27","2026-01-28","2026-01-29","2026-01-31",
+          "2026-02-01","2026-02-07","2026-02-08","2026-02-14",
+          "2026-02-15","2026-02-21","2026-02-22","2026-02-28",
+          "2026-03-01","2026-03-05","2026-03-06","2026-03-07",
+          "2026-03-08","2026-03-09","2026-03-10","2026-03-14",
+          "2026-03-15","2026-03-16","2026-03-20","2026-03-21",
+          "2026-03-22"
+        ]
+      },
+      "subjects": {
+        "FAC": ["Monday","Wednesday","Thursday"],
+        "SS": ["Monday","Tuesday","Thursday","Friday"],
+        "EVS": ["Monday","Wednesday","Friday"],
+        "EMT": ["Monday","Thursday","Friday"],
+        "DCMT": ["Tuesday","Wednesday","Thursday"],
+        "SSED": ["Tuesday","Thursday","Friday"],
+        "Maths": ["Monday","Tuesday"]
+      }
+    },
+
+    "S5": { "Power Systems 1": 4, "Microprocessors": 3 },
+    "S6": { "Power Systems 2": 4, "Power Electronics": 3 },
+    "S7": { "Smart Grid": 3, "Renewable Energy": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "ECE": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Basic Electronics": 3 },
+    "S2": { "Maths 2": 4, "Circuit Theory": 4 },
+    "S3": { "Electronic Devices": 4, "Digital Electronics": 3 },
+    "S4": { "Signals and Systems": 4, "Analog Circuits": 3 },
+    "S5": { "Communication Systems": 4, "Microprocessors": 3 },
+    "S6": { "Digital Signal Processing": 4, "VLSI": 3 },
+    "S7": { "Embedded Systems": 3, "Wireless Communication": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "MECH": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Engineering Graphics": 3 },
+    "S2": { "Maths 2": 4, "Mechanics": 4 },
+    "S3": { "Thermodynamics": 4, "Fluid Mechanics": 3 },
+    "S4": { "Machine Drawing": 3, "Manufacturing": 4 },
+    "S5": { "Heat Transfer": 4, "Dynamics": 3 },
+    "S6": { "Design of Machines": 4, "Automobile Engineering": 3 },
+    "S7": { "Industrial Engineering": 3, "Robotics": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "CIVIL": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Engineering Graphics": 3 },
+    "S2": { "Maths 2": 4, "Mechanics": 4 },
+    "S3": { "Structural Analysis": 4, "Geotechnical": 3 },
+    "S4": { "Environmental Engineering": 4, "Concrete Technology": 3 },
+    "S5": { "Transportation Engineering": 4, "Hydrology": 3 },
+    "S6": { "Steel Structures": 4, "Foundation Engineering": 3 },
+    "S7": { "Construction Planning": 3, "Advanced Structures": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  },
+
+  "CHEMICAL": {
+    "S1": { "Maths 1": 4, "Physics": 3, "Chemistry": 3 },
+    "S2": { "Maths 2": 4, "Thermodynamics": 4 },
+    "S3": { "Fluid Mechanics": 4, "Process Calculations": 3 },
+    "S4": { "Heat Transfer": 4, "Mass Transfer": 3 },
+    "S5": { "Chemical Reaction Engineering": 4, "Process Control": 3 },
+    "S6": { "Plant Design": 4, "Industrial Safety": 3 },
+    "S7": { "Petroleum Engineering": 3, "Biochemical Engineering": 4 },
+    "S8": { "Project": 6, "Seminar": 2 }
+  }
+}
